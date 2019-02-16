@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">personalTrainer</string>
     <string name="nutrition">Nutrition</string>
+    <string name="progress">Progress</string>
+    <string name="plus">+</string>
+    <string name="next">Workout</string>
 </resources>
