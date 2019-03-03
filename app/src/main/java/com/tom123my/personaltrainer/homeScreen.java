@@ -19,6 +19,7 @@ public class homeScreen extends AppCompatActivity {
     private Button workoutButton;
     private Button nutritionButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
