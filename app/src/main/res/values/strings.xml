@@ -4,4 +4,5 @@
     <string name="progress">Progress</string>
     <string name="plus">+</string>
     <string name="next">Workout</string>
+    <string name="updatemacros">updateMacros</string>
 </resources>

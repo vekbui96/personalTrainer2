@@ -6,8 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".homeScreen">
 
+    <EditText
+        android:id="@+id/fatsEdited"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesEdited" />
+
+    <TextView
+        android:id="@+id/calLabel"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:text="12"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutritionButton" />
+
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/add"
         android:layout_width="66dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
@@ -25,7 +48,10 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@color/colorPrimary"
         android:text="@string/progress"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +63,11 @@
         android:layout_marginTop="236dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@color/colorPrimary"
         android:text="@string/nutrition"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,8 +78,98 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="236dp"
+        android:background="@color/colorPrimary"
         android:text="@string/next"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="9dp"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/whatWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:text="  "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutButton" />
+
+    <TextView
+        android:id="@+id/fatsLabel"
+        android:layout_width="45dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calLabel" />
+
+    <TextView
+        android:id="@+id/proteinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatsLabel" />
+
+    <TextView
+        android:id="@+id/carbsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinLabel" />
+
+    <EditText
+        android:id="@+id/caloriesEdited"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@+id/whatWorkout"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/carbsEdited"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinEdited" />
+
+    <EditText
+        android:id="@+id/proteinEdited"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatsEdited" />
 
 </android.support.constraint.ConstraintLayout>
